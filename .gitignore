@@ -1,0 +1,65 @@
+# Build artifacts
+build/
+build_*/
+out/
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeScripts/
+CMakeLists.txt.user
+compile_commands.json
+.cmake/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cproject
+.project
+.settings/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python (some SLAM eval scripts are Python)
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Generated logs / time stats from ORB-SLAM3 runs
+ExecMean.txt
+ExecTimeMean.txt
+SessionInfo.txt
+LBA_Stats.txt
+LocalMapTimeStats.txt
+TrackLocalMapStats.txt
+TrackingTimeStats.txt
+Time*.txt
+time*.txt
+
+# Local datasets (large; not committed)
+Datasets/
+datasets/
+*.bag
+*.zip
+*.tar.gz
+
+# ORB vocabulary (large; download separately)
+Vocabulary/ORBvoc.txt
